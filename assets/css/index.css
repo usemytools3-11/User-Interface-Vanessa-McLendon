@@ -73,10 +73,6 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
-		background: #252122;
-		background-image: url("images/bg02.png");
-	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -126,7 +122,13 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #06287F;
-		font-weight: 700;
+    font-weight: 500%;
+    font-size: 500;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 400%;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1593,15 +1595,14 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
+		
 /* Button */
 
-	input[type="button"],
-	input[type="submit"],
-	input[type="reset"],
-	button,
 	.button {
 		-webkit-appearance: none;
-		display: inline-block;
+		display: flex;
+		justify-content: center;
+		margin-bottom:5%;
 		text-decoration: none;
 		cursor: pointer;
 		border: 0;
@@ -1619,12 +1620,9 @@ input, select, textarea {
 		transition: background-color .25s ease-in-out;
 	}
 
-		input[type="button"]:hover,
-		input[type="submit"]:hover,
-		input[type="reset"]:hover,
-		button:hover,
+		
 		.button:hover {
-			background: #e53359;
+			background: gray;
 		}
 
 		input[type="button"]:active,
@@ -2146,40 +2144,15 @@ input, select, textarea {
 				border-bottom: solid 10px #252122;
 				border-bottom-color: rgba(34, 30, 31, 0.98);
 			}
-
-/* Banner */
-
-	#banner {
-		background: #7F4B49;
-		background-position: center center;
-		background-size: auto 100%;
-		background-repeat: no-repeat;
-		text-align: center;
-		position: relative;
-		padding: 20em 0;
-		margin: 4em 0 0 0;
-	}
-
-		#banner header {
-			background-color: rgba(34, 30, 31, 0.98);
-			display: inline-block;
-			padding: 2.5em 5em;
-			border-radius: 5px;
-		}
-
-			#banner header h2 {
-				color: #fff;
-				font-weight: 700;
-				font-size: 2.5em;
-				margin: 0 0 0.65em 0;
+			.new-slide{
+			
+				display:flex;
+				margin-left: 15px;
+				/* justify-content: space-evenly; */
 			}
-
-			#banner header p {
-				color: #d52349;
-				padding: 0;
-				font-style: normal;
-				margin: 0;
-				font-size: 1.5em;
+			.second-slide{
+			
+				padding: 5px;
 			}
 
 /* Intro */
@@ -2289,7 +2262,7 @@ input, select, textarea {
 			opacity: 0.5;
 		}
 
-		#footer a {
+		.action a {
 			color: #c5c4c4;
 		}
 
@@ -2314,33 +2287,7 @@ input, select, textarea {
 				font-size: 1.75em;
 			}
 
-/* Copyright */
 
-	#copyright {
-		text-align: center;
-		margin: 3em 0 2em 0;
-	}
-
-		#copyright ul.links {
-			display: inline-block;
-			background: #2C2929;
-			background: rgba(255, 255, 255, 0.05);
-			border-radius: 5px;
-			margin: 0;
-			padding: 0.85em 2.25em 0.85em 2.25em;
-		}
-
-/* XLarge */
-
-	@media screen and (max-width: 1680px) {
-
-		/* Basic */
-
-			body, input, textarea, select {
-				font-size: 12pt;
-			}
-
-	}
 
 /* Large */
 
@@ -2440,16 +2387,16 @@ input, select, textarea {
 
 		/* Box */
 
-			.box footer ul.actions li {
+			.actions li {
 				margin: 1em 0 0 0;
 				display: block;
 			}
 
-				.box footer ul.actions li .button {
+				.actions li .button {
 					width: 100%;
 				}
 
-				.box footer ul.actions li:first-child {
+				.actions li:first-child {
 					margin-top: 0;
 				}
 
@@ -2808,21 +2755,10 @@ input, select, textarea {
 					border-right: solid 4em transparent;
 				}
 
-		/* Header */
 
-			/* #header {
-				text-align: center;
-				padding: 2em 0;
-			}
+		
 
-				#header h1 {
-					color: #06287F;
-					font-weight: 900;
-					font-size: 1.75em;
-					letter-spacing: -0.035em;
-					border:1px solid red;
-				} */
-
+				
 		/* Intro */
 
 			#intro {
@@ -2861,6 +2797,13 @@ input, select, textarea {
 						font-size: 1.2em;
 					}
 
+					/* slideshow */
+					.slide{
+						border:1px solid red;
+					}
+
+
+
 		/* Main */
 
 			#main {
@@ -2875,3 +2818,4 @@ input, select, textarea {
 
 	}
 }
+
