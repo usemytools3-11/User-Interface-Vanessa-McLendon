@@ -4,8 +4,12 @@ html {
   }
   
   *, *:before, *:after {
-	box-sizing: inherit;
+    box-sizing: inherit;
+    background-color: lightslategray;
+    
   }
+  
+
   
   .column {
 	float: left;
@@ -40,7 +44,7 @@ html {
   }
   
   .title {
-	color: grey;
+	color:blue;
   }
   
   .button {
@@ -84,6 +88,7 @@ html {
       font-size: 500%;
       display: flex;
       justify-content: center;
+      color: blue;
 
   }
 
@@ -93,8 +98,9 @@ html {
  }
 
  p{
-    border:1px solid red;
     display:flex;
      justify-content: center;
 
  }
+
+ 

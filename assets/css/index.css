@@ -122,7 +122,13 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #06287F;
-		font-weight: 700;
+    font-weight: 500%;
+    font-size: 500;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 400%;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2749,21 +2755,10 @@ input, select, textarea {
 					border-right: solid 4em transparent;
 				}
 
-		/* Header */
 
-			/* #header {
-				text-align: center;
-				padding: 2em 0;
-			}
+		
 
-				#header h1 {
-					color: #06287F;
-					font-weight: 900;
-					font-size: 1.75em;
-					letter-spacing: -0.035em;
-					border:1px solid red;
-				} */
-
+				
 		/* Intro */
 
 			#intro {
